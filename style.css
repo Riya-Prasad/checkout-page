@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100vh;
+    background: #131313;
+    color: #fff;
+    overflow: hidden;
+}
+
+
+@media (min-width: 900px){
+    .container{
+        display: flex;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+
+.container{
+    width: 96%;
+    margin: 30px auto;
+}
+
+
+.column{
+    width: 50%;
+    height: 100vh;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 20px;
+    border-radius: 25px;
+}
+
+.left{
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0 100px 0;
+    font-family: 'Nunito';
+    border: none;
+}
+
+
+.logo{
+    font-size: 24px;
+    flex-grow: 1;
+}
+
+.header h1{
+    text-transform: uppercase;
+    font-family: 'Odibee';
+    font-size: 100px;
+    font-weight: 300;
+    flex-grow: 1;
+}
+
+.ml12 .letter{
+    display: inline-block;
+    line-height: 1em;
+}
+
+.back-btn{
+    font-family: 'Oswald', Tahoma;
+    text-transform: capitalize;
+    color: #aaaaaa;
+    font-size: 1.3rem;
+    padding: 10px;
+    flex-grow: 2;
+    cursor: pointer;
+}
+
+.price{
+    display: flex;
+    justify-content: space-around;
+    text-transform: capitalize;
+    margin-top: 2rem;
+    width: 30%;
+    font-family: 'Oswald', Tahoma; 
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.right{
+    padding: 20px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    color: #aaaaaa;
+    font-family: 'Nunito', Tahoma;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.active{
+    color: #b6c9f0;
+}
+
+.card-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img img{
+    width: 135%;
+    height: 52vh;
+}
+
+.form input{
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #aaaaaa;
+    font-family: 'Nunito', Tahoma;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 20px 20px 20px 0;
+    margin: 0;
+}
+
+
+.form-row{
+    display: flex;
+}
+
+button{
+    width: 100%;
+    margin: 20px 0;
+    padding: 15px 0;
+    background: #000;
+    color: #fff;
+    font-family: 'Oswald', Tahoma;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #fff;
+    color: #131313;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 900px){
+    html, body{
+        width: 100%;
+        overflow: hidden;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .column{
+        width: 94% !important;
+    }
+}
+
